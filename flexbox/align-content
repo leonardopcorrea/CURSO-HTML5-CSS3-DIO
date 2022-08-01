@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Align Content</title>
+
+    <style>
+        .conteiner{
+            height: 500px;
+            max-width: 400px;
+            display: flex;
+            flex-wrap: wrap;
+            border: 1px solid black;
+            margin-bottom: 20px;
+        }
+
+        .item{
+            background-color: orangered;
+            padding: 0 5px;
+            margin: 5px;
+            flex: 1;
+            text-align: center;
+            color: white;
+            border: 2px solid black;
+        }
+
+        .stretch{
+            align-content: stretch;
+        }
+        .center{
+            align-content: center;
+        }
+        .flex-start{
+            align-content: flex-start;
+        }
+        .flex-end{
+            align-content: flex-end;
+        }
+        .space-around{
+            align-content: space-around;
+        }
+        .space-between{
+            align-content: space-between;
+        }
+    
+    </style>
+
+</head>
+<body>
+
+    <h>Stretch:</h>
+    <div class="conteiner stretch">
+        <div class="item">From concept to blueprint</div>
+        <div class="item">From concept</div>
+        <div class="item">From concept to blueprint, through years</div>
+        <div class="item">From concept to blueprint, through years of extensive</div>
+        <div class="item">From concept to blueprint, through years of extensive development and testing</div>
+        <div class="item">From concept to blueprint, through years</div>
+        <div class="item">From concept to blueprint, through years of extensive development and</div>
+    </div>
+
+    <h>Center:</h>
+    <div class="conteiner center">
+        <div class="item">From concept to blueprint</div>
+        <div class="item">From concept</div>
+        <div class="item">From concept to blueprint, through years</div>
+        <div class="item">From concept to blueprint, through years of extensive</div>
+        <div class="item">From concept to blueprint, through years of extensive development and testing</div>
+        <div class="item">From concept to blueprint, through years</div>
+        <div class="item">From concept to blueprint, through years of extensive development and</div>
+    </div>
+
+    <h>Flex-Start:</h>
+    <div class="conteiner flex-start">
+        <div class="item">From concept to blueprint</div>
+        <div class="item">From concept</div>
+        <div class="item">From concept to blueprint, through years</div>
+        <div class="item">From concept to blueprint, through years of extensive</div>
+        <div class="item">From concept to blueprint, through years of extensive development and testing</div>
+        <div class="item">From concept to blueprint, through years</div>
+        <div class="item">From concept to blueprint, through years of extensive development and</div>
+    </div>
+
+    <h>Flex-End:</h>
+    <div class="conteiner flex-end">
+        <div class="item">From concept to blueprint</div>
+        <div class="item">From concept</div>
+        <div class="item">From concept to blueprint, through years</div>
+        <div class="item">From concept to blueprint, through years of extensive</div>
+        <div class="item">From concept to blueprint, through years of extensive development and testing</div>
+        <div class="item">From concept to blueprint, through years</div>
+        <div class="item">From concept to blueprint, through years of extensive development and</div>
+    </div>
+
+    <h>Space-Around:</h>
+    <div class="conteiner space-around">
+        <div class="item">From concept to blueprint</div>
+        <div class="item">From concept</div>
+        <div class="item">From concept to blueprint, through years</div>
+        <div class="item">From concept to blueprint, through years of extensive</div>
+        <div class="item">From concept to blueprint, through years of extensive development and testing</div>
+        <div class="item">From concept to blueprint, through years</div>
+        <div class="item">From concept to blueprint, through years of extensive development and</div>
+    </div>
+
+    <h>Space-Between:</h>
+    <div class="conteiner space-between">
+        <div class="item">From concept to blueprint</div>
+        <div class="item">From concept</div>
+        <div class="item">From concept to blueprint, through years</div>
+        <div class="item">From concept to blueprint, through years of extensive</div>
+        <div class="item">From concept to blueprint, through years of extensive development and testing</div>
+        <div class="item">From concept to blueprint, through years</div>
+        <div class="item">From concept to blueprint, through years of extensive development and</div>
+    </div>
+
+
+</body>
+</html>

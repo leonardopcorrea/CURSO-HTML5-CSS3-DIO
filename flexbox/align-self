@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Align Self</title>
+
+    <style>
+        .flex-container{
+            display: flex;
+            max-width: 400px;
+            margin-bottom: 20px;
+            border: 2px solid black;
+            min-height: 120px;
+        }
+        .align-container{
+            align-items: center;
+        }
+        .item{
+            background-color: brown;
+            color: white;
+            font-size: 24px;
+            text-align: center;
+            margin: 5PX;
+        }
+
+        .center{
+            align-self: center;
+        }
+        .start{
+            align-self: flex-start;
+        }
+        .end{
+            align-self: flex-end;
+        }
+        .baseline{
+            align-self: baseline;
+        }
+        .stretch{
+            align-self: stretch;
+        }
+        .auto{
+            align-self: auto;
+        }
+
+        .direction{
+            flex-direction: column;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <h1>Align-Self:</h1>
+    
+    <h2>Row:</h2>
+    <h>Align = auto</h>
+    <section class="flex-container align-container">
+        <div class="item auto">AAA</div>
+        <div class="item auto">123</div>
+        <div class="item auto">LOREM IPSUM LATIM GREGO INGLES SAXÃO</div>
+        <div class="item auto">abc</div>
+    </section>
+
+    <h>Align = start</h>
+    <section class="flex-container">
+        <div class="item start">AAA</div>
+        <div class="item start">123</div>
+        <div class="item start">LOREM IPSUM LATIM GREGO INGLES SAXÃO</div>
+        <div class="item start">abc</div>
+    </section>
+
+    <h>Align = end</h>
+    <section class="flex-container">
+        <div class="item end">AAA</div>
+        <div class="item end">123</div>
+        <div class="item end">LOREM IPSUM LATIM GREGO INGLES SAXÃO</div>
+        <div class="item end">abc</div>
+    </section>
+
+    <h>Align = baseline</h>
+    <section class="flex-container">
+        <div class="item baseline">AAA</div>
+        <div class="item baseline">123</div>
+        <div class="item baseline">LOREM IPSUM LATIM GREGO INGLES SAXÃO</div>
+        <div class="item baseline">abc</div>
+    </section>
+
+    <h>Align = stretch</h>
+    <section class="flex-container">
+        <div class="item stretch">AAA</div>
+        <div class="item stretch">123</div>
+        <div class="item stretch">LOREM IPSUM LATIM GREGO INGLES SAXÃO</div>
+        <div class="item stretch">abc</div>
+    </section>
+
+    <h2>Column:</h2>
+    <h>Align = auto</h>
+    <section class="flex-container align-container direction">
+        <div class="item auto">AAA</div>
+        <div class="item auto">123</div>
+        <div class="item auto">LOREM IPSUM LATIM GREGO INGLES SAXÃO</div>
+        <div class="item auto">abc</div>
+    </section>
+
+    <h>Align = start</h>
+    <section class="flex-container direction">
+        <div class="item start">AAA</div>
+        <div class="item start">123</div>
+        <div class="item start">LOREM IPSUM LATIM GREGO INGLES SAXÃO</div>
+        <div class="item start">abc</div>
+    </section>
+
+    <h>Align = end</h>
+    <section class="flex-container direction">
+        <div class="item end">AAA</div>
+        <div class="item end">123</div>
+        <div class="item end">LOREM IPSUM LATIM GREGO INGLES SAXÃO</div>
+        <div class="item end">abc</div>
+    </section>
+
+    <h>Align = baseline</h>
+    <section class="flex-container direction">
+        <div class="item baseline">AAA</div>
+        <div class="item baseline">123</div>
+        <div class="item baseline">LOREM IPSUM LATIM GREGO INGLES SAXÃO</div>
+        <div class="item baseline">abc</div>
+    </section>
+
+    <h>Align = stretch</h>
+    <section class="flex-container direction">
+        <div class="item stretch">AAA</div>
+        <div class="item stretch">123</div>
+        <div class="item stretch">LOREM IPSUM LATIM GREGO INGLES SAXÃO</div>
+        <div class="item stretch">abc</div>
+    </section>
+
+</body>
+</html>
